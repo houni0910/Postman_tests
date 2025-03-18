@@ -20,7 +20,7 @@ jobs:
         run: npm install -g newman
 
       - name: Run API tests
-        run: newman run booking.postmsn_collection.json --reporters cli,junit --reporter-junit-export results.xml
+        run: newman run booking.postmsn_collection.json --reporters cli,junit --reporter-junit-export results.json
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
